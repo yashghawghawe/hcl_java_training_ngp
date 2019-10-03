@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ProjectEE</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>FirstJSP</servlet-name>
+  <!-- jsp-file>/WEB-INF/Date.jsp</jsp-file -->
+  <jsp-file>/WEB-INF/Employeeregister.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>FirstJSP</servlet-name>
+  <url-pattern>/testEmp</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>Date</servlet-name>
+  <jsp-file>/WEB-INF/Date.jsp</jsp-file >
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Date</servlet-name>
+  <url-pattern>/testdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>DetailsEmp</servlet-name>
+  <jsp-file>/WEB-INF/Employeedetail.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>DetailsEmp</servlet-name>
+  <url-pattern>/detailsEmp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>myValues</servlet-name>
+  <jsp-file>/WebContent/getValues.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>myValues</servlet-name>
+  <url-pattern>/ShowVals</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
