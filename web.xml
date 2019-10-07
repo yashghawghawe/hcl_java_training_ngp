@@ -1,114 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
-	id="WebApp_ID" version="4.0">
-	<display-name>UserManagement</display-name>
-	
-	<servlet>
-		<servlet-name>HomePage</servlet-name>
-		<jsp-file>/WEB-INF/index.jsp</jsp-file>
-	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>HomePage</servlet-name>
-		<url-pattern>/Home</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>AddUser</servlet-name>
-		<jsp-file>/WEB-INF/adduserform.jsp</jsp-file>
-	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>AddUser</servlet-name>
-		<url-pattern>/UserAdd</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>AddUserForm</servlet-name>
-		<jsp-file>/WEB-INF/userform.jsp</jsp-file>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://java.sun.com/xml/ns/javaee" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+id="WebApp_ID" version="3.0">
 
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>AddUserForm</servlet-name>
-
-		<url-pattern>/UserAddForm</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>ViewUser</servlet-name>
-
-		<jsp-file>/WEB-INF/viewusers.jsp</jsp-file>
-	</servlet>
-	<servlet-mapping>
-
-		<servlet-name>ViewUser</servlet-name>
-		<url-pattern>/UserView</url-pattern>
-		</servlet-mapping>
-		<servlet>
-
-		<servlet-name>EditUserAction</servlet-name>
-		<jsp-file>/WEB-INF/edituser.jsp</jsp-file>
-
-	</servlet>
-		<servlet-mapping>
-			<servlet-name>EditUserAction</servlet-name>
-
-			<url-pattern>/EditUserAct</url-pattern>
-		</servlet-mapping>
-		
-		<servlet>
-			<servlet-name>DeleteUser</servlet-name>
-
-			<jsp-file>/WEB-INF/deleteuser.jsp</jsp-file>
-		</servlet>
-		
-		<servlet-mapping>
-
-			<servlet-name>DeleteUser</servlet-name>
-			<url-pattern>/DeleteUser</url-pattern>
-
-		</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>AddUserAction</servlet-name>
-		<jsp-file>/WEB-INF/adduser.jsp</jsp-file>
-
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>AddUserAction</servlet-name>
-
-		<url-pattern>/UserAddAct</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>AddUserSuccess</servlet-name>
-
-		<jsp-file>/WEB-INF/adduser_success.jsp</jsp-file>
-	</servlet>
-	<servlet-mapping>
-
-		<servlet-name>AddUserSuccess</servlet-name>
-		<url-pattern>/UserAddSuccess</url-pattern>
-
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>AddUserError</servlet-name>
-		<jsp-file>/WEB-INF/adduser_error.jsp</jsp-file>
-
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>AddUserError</servlet-name>
-
-		<url-pattern>/UserAddError</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>EditUser</servlet-name>
-
-		<jsp-file>/WEB-INF/editform.jsp</jsp-file>
-	</servlet>
-	<servlet-mapping>
-
-		<servlet-name>EditUser</servlet-name>
-		<url-pattern>/EditUser</url-pattern>
-
-	</servlet-mapping>
+  <display-name>ProjectEE</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>FirstJSP</servlet-name>
+  <!-- jsp-file>/WEB-INF/Date.jsp</jsp-file -->
+  <jsp-file>/WEB-INF/Employeeregister.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>FirstJSP</servlet-name>
+	  <url-pattern>/testEmp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>DetailsEmp</servlet-name>
+	  <jsp-file>/WEB-INF/Employeedetail.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>DetailsEmp</servlet-name>
+     <url-pattern>/DetailsEmp</url-pattern>
+  </servlet-mapping>
+ 
 </web-app>
